@@ -23,14 +23,27 @@ struct LocationsView: View {
             
             VStack(spacing: 0){
                 header
-                .padding()
+                    .padding()
                 
                 Spacer()
-            }
-              
+                
+                ZStack{
+                    ForEach(vm.locations){ location in
+                        if(vm.mapLocation == location){
+                            LocationPreviewView(location: location)
+                                .shadow(color: Color.black.opacity(0.3),
+                                        radius: 20)
+                                .padding()
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .trailing),
+                                    removal: .move(edge: .leading)))
+                        }
+                    }
+                }
             }
         }
     }
+}
 
 struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
@@ -51,20 +64,20 @@ extension LocationsView{
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
                     .animation(.none, value: vm.mapLocation)
-                    //.background(Color.red)
+                //.background(Color.red)
                     .overlay(alignment: .leading){
                         Image(systemName: "arrow.down")
                             .foregroundColor(.primary)
                             .padding()
                             .rotationEffect(Angle(degrees:
-                                vm.showLocationsList ? 180 : 0))
+                                                    vm.showLocationsList ? 180 : 0))
                     }
             }
-                   
+            
             if(vm.showLocationsList){
                 LocationsListView()
             }
-           
+            
         }
         .background(.thickMaterial)
         .cornerRadius(10)
