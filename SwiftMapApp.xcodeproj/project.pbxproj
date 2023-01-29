@@ -13,6 +13,12 @@
 		4C1527912985A8EA0095FEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1527902985A8EA0095FEAC /* Assets.xcassets */; };
 		4C1527972985AAC40095FEAC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527962985AAC40095FEAC /* Location.swift */; };
 		4C15279A2985AD5F0095FEAC /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527992985AD5F0095FEAC /* LocationsDataService.swift */; };
+		4C15279C2985E4340095FEAC /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15279B2985E4340095FEAC /* LocationsView.swift */; };
+		4C15279E2985E6AE0095FEAC /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15279D2985E6AE0095FEAC /* LocationsViewModel.swift */; };
+		4C1527A029869DF20095FEAC /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15279F29869DF20095FEAC /* LocationsListView.swift */; };
+		4C1527A22986B3360095FEAC /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527A12986B3360095FEAC /* LocationPreviewView.swift */; };
+		4C1527A42986E5310095FEAC /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */; };
+		4C1527A62986E9980095FEAC /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527A52986E9980095FEAC /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,13 @@
 		4C1527902985A8EA0095FEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1527962985AAC40095FEAC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4C1527992985AD5F0095FEAC /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		4C15279B2985E4340095FEAC /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		4C15279D2985E6AE0095FEAC /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		4C15279F29869DF20095FEAC /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		4C1527A12986B3360095FEAC /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		4C1527A52986E9980095FEAC /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		4C1527A7298705C40095FEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,7 @@
 		4C1527812985A7AB0095FEAC /* SwiftMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C1527A7298705C40095FEAC /* Info.plist */,
 				4C1527822985A7AB0095FEAC /* SwiftMapAppApp.swift */,
 				4C1527842985A7AB0095FEAC /* ContentView.swift */,
 				4C1527982985AD310095FEAC /* DataServices */,
@@ -86,6 +100,11 @@
 		4C1527942985AA910095FEAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C15279B2985E4340095FEAC /* LocationsView.swift */,
+				4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */,
+				4C1527A52986E9980095FEAC /* LocationDetailView.swift */,
+				4C15279F29869DF20095FEAC /* LocationsListView.swift */,
+				4C1527A12986B3360095FEAC /* LocationPreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +112,7 @@
 		4C1527952985AA9A0095FEAC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4C15279D2985E6AE0095FEAC /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,8 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C15279A2985AD5F0095FEAC /* LocationsDataService.swift in Sources */,
+				4C1527A42986E5310095FEAC /* LocationMapAnnotationView.swift in Sources */,
+				4C1527A029869DF20095FEAC /* LocationsListView.swift in Sources */,
+				4C1527A22986B3360095FEAC /* LocationPreviewView.swift in Sources */,
+				4C15279E2985E6AE0095FEAC /* LocationsViewModel.swift in Sources */,
 				4C1527852985A7AB0095FEAC /* ContentView.swift in Sources */,
+				4C15279C2985E4340095FEAC /* LocationsView.swift in Sources */,
 				4C1527972985AAC40095FEAC /* Location.swift in Sources */,
+				4C1527A62986E9980095FEAC /* LocationDetailView.swift in Sources */,
 				4C1527832985A7AB0095FEAC /* SwiftMapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,11 +336,12 @@
 				DEVELOPMENT_TEAM = 3DM5372VZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jerome Map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +349,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nl.joramkwetters.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,11 +369,12 @@
 				DEVELOPMENT_TEAM = 3DM5372VZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jerome Map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +382,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nl.joramkwetters.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
