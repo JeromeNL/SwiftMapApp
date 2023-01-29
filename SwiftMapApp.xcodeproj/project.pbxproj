@@ -17,6 +17,7 @@
 		4C15279E2985E6AE0095FEAC /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15279D2985E6AE0095FEAC /* LocationsViewModel.swift */; };
 		4C1527A029869DF20095FEAC /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C15279F29869DF20095FEAC /* LocationsListView.swift */; };
 		4C1527A22986B3360095FEAC /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527A12986B3360095FEAC /* LocationPreviewView.swift */; };
+		4C1527A42986E5310095FEAC /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4C15279D2985E6AE0095FEAC /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		4C15279F29869DF20095FEAC /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		4C1527A12986B3360095FEAC /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4C15279B2985E4340095FEAC /* LocationsView.swift */,
+				4C1527A32986E5310095FEAC /* LocationMapAnnotationView.swift */,
 				4C15279F29869DF20095FEAC /* LocationsListView.swift */,
 				4C1527A12986B3360095FEAC /* LocationPreviewView.swift */,
 			);
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C15279A2985AD5F0095FEAC /* LocationsDataService.swift in Sources */,
+				4C1527A42986E5310095FEAC /* LocationMapAnnotationView.swift in Sources */,
 				4C1527A029869DF20095FEAC /* LocationsListView.swift in Sources */,
 				4C1527A22986B3360095FEAC /* LocationPreviewView.swift in Sources */,
 				4C15279E2985E6AE0095FEAC /* LocationsViewModel.swift in Sources */,
